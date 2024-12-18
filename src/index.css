@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+
+@font-face {
+  font-family: "YuGi"; 
+  src: url("./assets/Yugi.ttf") format("truetype");
+}
+
+.TopContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.TopContainer h1{
+    color: rgba(0, 0, 0, 0.747);
+    font-family: "YuGi";
+}
+
+
+.ImageContainer{
+  width: 100%;
+  max-width: 10%;   /* make media queries for the rest later on*/
+}
+
+.ImageContainer img{
+  width: 100%;
+  height: auto;
+}
+
+.MiddleContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CardsContainer{
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 90vh;
+  align-items: center;
+
+}
+
+.Card{
+  width: 240px;
+  height: 350px;
+ 
+}
+
+.Card:hover{
+  cursor: pointer;
+  outline: rgba(255, 0, 0, 0.671) solid;
+}
+
+.Card img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.LoadingContainer{
+  display: flex;
+  gap: 5px;
+}
+
+.LoadingContainer h1{
+    color: rgba(0, 0, 0, 0.747);
+    font-family: "YuGi";
+  
+}
+ 
