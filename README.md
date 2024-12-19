@@ -10,7 +10,4 @@ Responsive Design: The game works great on different screen sizes, tested and tw
 Smooth Interactions: Added CSS transitions for hover effects and background changes to make the game more engaging.
 
 
-"# Memory-Card" 
-"# Memory-Card-Game" 
-"# Memory-Card-Game" 
-"# Memory-Card" 
+
