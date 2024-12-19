@@ -114,8 +114,7 @@ body{
 
 .Card{
   width: 240px;
-  height: 350px;
- 
+  height: 360px;
 }
 
 .Card:hover{
@@ -131,12 +130,23 @@ body{
 
 .LoadingContainer{
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 90vh;
+  justify-content: center;
 }
 
 .LoadingContainer h1{
-    color: rgba(0, 0, 0, 0.747);
-    font-family: "YuGi";
+    font-size: 3rem;
+    font-family: "Ferrum";
+    color: rgba(255, 255, 255, 0.685);
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.LoadingContainer img{
+  width: 90px;
 }
 
 .FooterContainer{
@@ -147,21 +157,12 @@ body{
   color: rgb(0, 0, 0);
 }
 
-.FooterContainer h2{
-  font-family: "Ferrum";
-}
-
-.FooterContainer a{
-  color: rgba(255, 255, 255, 0.651);
-}
-
-.FooterContainer a:hover{
-  color: rgba(255, 0, 0, 0.719);
-}
 
 .rule{
   font-family: "Ferrum";
-  color: rgb(248, 248, 248);
+  color: rgba(228, 222, 222, 0.979);
+  text-decoration: underline;
+  text-shadow: red;
   
 }
 
@@ -169,5 +170,3 @@ body{
 .bScore{
  margin-left: -40px;
 }
- 
- 

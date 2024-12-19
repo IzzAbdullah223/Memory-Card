@@ -6,6 +6,7 @@ import ReactParallaxTilt from 'react-parallax-tilt';
 
 function Cards(Props){
 
+    
     const[data,setData]= useState(null)
     const[Loading,setLoading] = useState(true)
     const Cards=[1,2,3,4,5,6,7,8,9,10,11,12]
@@ -72,15 +73,7 @@ function Cards(Props){
        let Check = true
         audio.play();
         let test = event.currentTarget.querySelector("img").src
-        console.log(test)
         setPlayedCards(P=>[...P,test])
-        console.log("Current played cards:")
-        console.log(playedCards)
-        console.log("Clicked Card")
-        console.log(test)
-        
-       
-
            for(let i=0;i<=playedCards.length;i++){// Check if the player lost or not 
            if(test==playedCards[i]){
              Check=false
@@ -89,7 +82,6 @@ function Cards(Props){
              if(!Check){ //Set the best score after the game end 
                  if(Props.Score>Props.bestScore){
                     Props.setBestScore(B=>B=Props.Score)
-                    console.log('Did the game end?')
                  }
                  startNewGame()
              }            
