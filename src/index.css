@@ -23,6 +23,204 @@ body{
   src: url("./assets/ferrum.otf") format("truetype");
 }
 
+@media(max-width: 1280px) { /* for 720p*/
+    .RightSide{
+      width: 20%;
+      font-size: 1.5rem;
+    }
+    .ImageContainer{
+      width: 100%;
+      min-width: 20%;
+    }
+    .LeftSide{
+      font-size: 1.4rem;
+    }
+    .rule{
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 2560px){
+  .TopContainer{
+    font-size: 2.5rem;
+  }
+
+  .RightSide h2{
+
+    font-size: 3rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 40%;
+  }
+
+  .rule{
+    font-size: 3.4rem;
+  }
+
+  .Card{
+    min-width: 400px;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .RightSide{
+    width: 10%;
+    font-size: 1rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 15%;
+  }
+}
+
+@media (max-width: 1310px) {
+  .RightSide{
+    width: 25%;
+    font-size: 1.4rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 25%;
+  }
+}
+
+
+
+@media (max-width: 1310px) {
+  .RightSide{
+    width: 20%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 20%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1018px) {
+  .RightSide{
+    width: 25%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 25%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1018px) {
+  .RightSide{
+    width: 25%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 25%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  .RightSide{
+    width: 35%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 27%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 773px) {
+  .RightSide{
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 40%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 563px) {
+  .RightSide{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 50%;
+  }
+
+  .LeftSide h2{
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 492px) {
+  .RightSide{
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .ImageContainer{
+    width: 100%;
+    min-width: 50%;
+  }
+
+  .LeftSide h2{
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .rule{
+    font-size: 1.9rem;
+  }
+}
+
+
+
+
+
+
+
+
 .GameContainer{
   display: flex;
   flex-direction: column;
@@ -48,14 +246,7 @@ body{
   width: 100%;
   max-width: 10%;   
 }
-
-@media(max-width: 1135px){
-  .ImageContainer   {
-    width: 100%;
-    max-width: 20%;    
  
-  }
-}
 
 .ImageContainer img{
   width: 100%;
@@ -66,6 +257,7 @@ body{
 .LeftSide{
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
 }
 
 .LeftSide h2{
@@ -80,6 +272,12 @@ body{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-right: 40px;
+}
+
+
+.bScore{
+  margin-left: -40px;
 }
 
 .RightSide h2{
@@ -87,15 +285,6 @@ body{
   color: rgba(255, 255, 255, 0.685);
   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
-
-@media(max-width: 1544px){
-  .RightSide h2   {
-      margin-left: -150px;
-  }
-}
- 
- 
- 
 
 .MiddleContainer{
   display: flex;
@@ -118,77 +307,6 @@ body{
 }
 
 
-@media(min-width: 1920px){
-  .Card  {
-       width: 240px;
-       height: 440px;
-  }
-
-  .RightSide h2{
-    font-size: 1.5rem;
-    
-  }
-
-  
-
-  .LeftSide h2{
-    font-size: 1.5rem;
-  }
-  .LeftSide img{
-    width:  240px;
-  }
-  .rule{
-    font-size: 2rem;
-  }
-
-}
-
-
-@media(min-width: 2560px){
-  .Card  {
-       width: 400px;
-       height: 800px;
-  }
-
-  .RightSide h2{
-    font-size: 2.5rem;
-  }
-
-  .LeftSide h2{
-    font-size: 2.5rem;
-  }
-  .LeftSide img{
-    width:  240px;
-  }
-  .rule{
-    font-size: 3rem;
-  }
-
-}
-
-@media(min-width: 3840px){
-  .Card  {
-       width: 650px;
-       height: 1200px;
-  }
-
-  .RightSide h2{
-    font-size: 4rem;
-  }
-
-  .LeftSide h2{
-    font-size: 4rem;
-  }
-  .LeftSide img{
-    width:  500px;
-  }
-  .rule{
-    font-size: 4rem;
-  }
-
-}
-
-
 .Card:hover{
   cursor: pointer;
   outline: rgba(255, 0, 0, 0.671) solid;
@@ -198,7 +316,6 @@ body{
   width: 100%;
   height: 100%;
 }
-
 
 .LoadingContainer{
   display: flex;
@@ -234,11 +351,6 @@ body{
   font-family: "Ferrum";
   color: rgba(228, 222, 222, 0.979);
   text-decoration: underline;
-  text-shadow: red;
-  
 }
 
-
-.bScore{
- margin-left: -40px;
-}
+ 

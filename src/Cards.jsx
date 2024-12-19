@@ -5,6 +5,8 @@ import cardClickSound from './assets/CardClickSound.mp3'
 import ReactParallaxTilt from 'react-parallax-tilt';
 
 function Cards(Props){
+    console.log(window.innerWidth)
+    console.log(window.innerHeight)
 
     
     const[data,setData]= useState(null)
@@ -38,7 +40,6 @@ function Cards(Props){
                         let cardImg=card.querySelector("img")
                         cardImg.src = data.data[randomNumber].card_images[0].image_url
                         setCardArray(C=>[...C,data.data[randomNumber].card_images[0].image_url])
-                    
                     })
                 },2000)
                 
