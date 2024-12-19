@@ -45,37 +45,51 @@ function Cards(Props){
     }, [data]);
  
 
- //   function startNewGame(){
-        //    setCardArray([]);  //Clearing array for new game
-          //  setPlayedCards([]);  
+    function startNewGame(){
+            setCardArray([]);  //Clearing array for new game
+            setPlayedCards([]);  
 
-         //   const cards = document.querySelectorAll(".Card")
-          //  setTimeout(()=>{
-           //     cards.forEach(card=>{
-            ///        let randomNumber = Math.floor(Math.random()*13436)
-            //        let cardImg=card.querySelector("img")
-            //        cardImg.src = data.data[randomNumber].card_images[0].image_url
-            //        setCardArray(C=>[...C,data.data[randomNumber].card_images[0].image_url])
+        
+
+            const cards = document.querySelectorAll(".Card")
+                cards.forEach(card=>{
+                    let cardImg = card.querySelector("img")
+                    cardImg.src = cardBack
+                })
+            setTimeout(()=>{
+                cards.forEach(card=>{
+                let randomNumber = Math.floor(Math.random()*13436)
+                    let cardImg=card.querySelector("img")
+                    cardImg.src = data.data[randomNumber].card_images[0].image_url
+                    setCardArray(C=>[...C,data.data[randomNumber].card_images[0].image_url])
                 
-            //    })
-          //  },2000)
-    //}
+                })
+            },2000)
+    }
 
     function PlayRound(event){
        const audio = new Audio(cardClickSound)
        let Check = true
         audio.play();
-        let test = event.currentTarget.querySelector("img")
+        let test = event.currentTarget.querySelector("img").src
+        console.log(test)
         setPlayedCards(P=>[...P,test])
+        console.log("Current played cards:")
+        console.log(playedCards)
+        console.log("Clicked Card")
+        console.log(test)
+        
+       
 
            for(let i=0;i<=playedCards.length;i++){// Check if the player lost or not 
            if(test==playedCards[i]){
              Check=false
-             Props.setScore(S=>0)
+             Props.setScore(S=>S=0)
 
              if(!Check){ //Set the best score after the game end 
                  if(Props.Score>Props.bestScore){
                     Props.setBestScore(B=>B=Props.Score)
+                    console.log('Did the game end?')
                  }
                  startNewGame()
              }            
@@ -84,7 +98,6 @@ function Cards(Props){
 
         if(Check){ // Player will keep playing and cards will be shuffled
             Props.setScore(S=>S+1);
-            console.log(cardArray)
             Shuffle()
              
         }     
@@ -97,7 +110,6 @@ function Cards(Props){
             [cardArray[i],cardArray[random]] = [cardArray[random], cardArray[i]];
         }
         let Random=0;
-
         cards.forEach(card=>{
             let cardImg=card.querySelector("img")
             cardImg.src = cardArray[Random]
@@ -118,7 +130,10 @@ function Cards(Props){
                 <img src={Gif} width="50px"></img>
             </div>
            ):(
+               
             <div className="CardsContainer">
+                <h2 className="rule">Don't click on the same card twice!</h2>
+                <div className="CardsContainer"> 
                 {Cards.map((card,index)=>(
                     <ReactParallaxTilt> 
                     <div className="Card" onClick={PlayRound} key={index}>
@@ -127,8 +142,10 @@ function Cards(Props){
                     </ReactParallaxTilt>
                 ))}
             </div>
+            </div>
            )}
         </div>
+         
     )
 
 }

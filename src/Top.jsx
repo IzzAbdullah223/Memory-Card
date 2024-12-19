@@ -7,11 +7,19 @@ function Top(Props){
 
     return(
         <div className="TopContainer">
+            <div className="LeftSide"> 
             <div className="ImageContainer"> 
                 <img src={image}></img>
             </div>
-            <h1>Score: {Props.Score}</h1>
-            <h1>Best Score: {Props.bestScore} </h1>
+            <h2>MEMORY CARD GAME</h2>
+            </div>
+         
+
+
+            <div className="RightSide"> 
+                <h2>Score: {Props.Score}</h2>
+                <h2 className='bScore'>Best Score: {Props.bestScore} </h2>
+            </div>
             
         </div>
     )

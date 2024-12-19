@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Top from './Top'
 import Cards from './Cards'
+import Footer from './Footer';
   
 
 function App() {
