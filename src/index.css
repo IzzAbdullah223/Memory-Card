@@ -117,6 +117,33 @@ body{
   height: 360px;
 }
 
+
+@media(min-width: 1920px){
+  .Card  {
+       width: 240px;
+       height: 440px;
+  }
+
+  .RightSide h2{
+    font-size: 1.5rem;
+    
+  }
+
+  
+
+  .LeftSide h2{
+    font-size: 1.5rem;
+  }
+  .LeftSide img{
+    width:  240px;
+  }
+  .rule{
+    font-size: 2rem;
+  }
+
+}
+
+
 @media(min-width: 2560px){
   .Card  {
        width: 400px;
