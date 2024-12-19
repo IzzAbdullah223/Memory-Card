@@ -1,9 +1,13 @@
-# React + Vite
+Memory Card Game
+This is a fun and interactive memory card game built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shuffling the Cards: I used the Fisher-Yates algorithm to ensure the cards shuffle randomly every time, keeping the game fair and unpredictable.
 
-Currently, two official plugins are available:
+State Management: React’s useState and useEffect handle the game logic, like updating scores and resetting the game, so everything runs smoothly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# Memory-Card" 
+Responsive Design: The game works great on different screen sizes, tested and tweaked using Chrome DevTools.
+
+Smooth Interactions: Added CSS transitions for hover effects and background changes to make the game more engaging.
+This project was a great way to dive deeper into React and responsive design.
+
+

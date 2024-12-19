@@ -116,14 +116,14 @@ function Cards(Props){
     return(
         
         <div>
-           {Loading? (
+           {!Loading? (
             <div className="LoadingContainer">
                 <h1>Loading. . . </h1>
                 <img src={Gif} width="50px"></img>
             </div>
            ):(
                
-            <div className="CardsContainer">
+            <div className="CardsContainer" style={{display:"none"}}>
                 <h2 className="rule">Don't click on the same card twice!</h2>
                 <div className="CardsContainer"> 
                 {Cards.map((card,index)=>(

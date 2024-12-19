@@ -31,7 +31,7 @@ body{
 
 .TopContainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgba(12, 4, 4, 0.589);
 }
@@ -116,6 +116,51 @@ body{
   width: 240px;
   height: 360px;
 }
+
+@media(min-width: 2560px){
+  .Card  {
+       width: 400px;
+       height: 800px;
+  }
+
+  .RightSide h2{
+    font-size: 2.5rem;
+  }
+
+  .LeftSide h2{
+    font-size: 2.5rem;
+  }
+  .LeftSide img{
+    width:  240px;
+  }
+  .rule{
+    font-size: 3rem;
+  }
+
+}
+
+@media(min-width: 3840px){
+  .Card  {
+       width: 650px;
+       height: 1200px;
+  }
+
+  .RightSide h2{
+    font-size: 4rem;
+  }
+
+  .LeftSide h2{
+    font-size: 4rem;
+  }
+  .LeftSide img{
+    width:  500px;
+  }
+  .rule{
+    font-size: 4rem;
+  }
+
+}
+
 
 .Card:hover{
   cursor: pointer;
