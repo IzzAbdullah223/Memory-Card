@@ -4,6 +4,7 @@ import cardBack from './assets/CardBack.png'
 import cardClickSound from './assets/CardClickSound.mp3'
 import ReactParallaxTilt from 'react-parallax-tilt';
 
+
 function Cards(Props){
     console.log(window.innerWidth)
     console.log(window.innerHeight)
