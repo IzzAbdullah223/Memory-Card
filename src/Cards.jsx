@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import LoadingGif from './assets/LoadingGif.Gif'
+import LoadingGif from './assets/LoadingGif.gif'
 import CardBack from './assets/CardBack.png'
 import CardClickSound from './assets/CardClickSound.mp3'
 import ReactParallaxTilt from 'react-parallax-tilt';
