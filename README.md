@@ -8,6 +8,5 @@ State Management: React’s useState and useEffect handle the game logic, like u
 Responsive Design: The game works great on different screen sizes, tested and tweaked using Chrome DevTools.
 
 Smooth Interactions: Added CSS transitions for hover effects and background changes to make the game more engaging.
-This project was a great way to dive deeper into React and responsive design.
 
 
