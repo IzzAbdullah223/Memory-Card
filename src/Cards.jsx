@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import Gif from './assets/LoadingGif.Gif'
-import cardBack from './assets/CardBack.png'
-import cardClickSound from './assets/CardClickSound.mp3'
+import LoadingGif from './assets/LoadingGif.Gif'
+import CardBack from './assets/CardBack.png'
+import CardClickSound from './assets/CardClickSound.mp3'
 import ReactParallaxTilt from 'react-parallax-tilt';
 
 
@@ -57,7 +57,7 @@ function Cards(Props){
             const cards = document.querySelectorAll(".Card")
                 cards.forEach(card=>{
                     let cardImg = card.querySelector("img")
-                    cardImg.src = cardBack
+                    cardImg.src = CardBack
                 })
             setTimeout(()=>{
                 cards.forEach(card=>{
@@ -71,7 +71,7 @@ function Cards(Props){
     }
 
     function PlayRound(event){
-       const audio = new Audio(cardClickSound)
+       const audio = new Audio(CardClickSound)
        let Check = true
         audio.play();
         let test = event.currentTarget.querySelector("img").src
@@ -121,7 +121,7 @@ function Cards(Props){
            {Loading? (
             <div className="LoadingContainer">
                 <h1>Loading. . . </h1>
-                <img src={Gif} width="50px"></img>
+                <img src={LoadingGif} width="50px"></img>
             </div>
            ):(
                
@@ -131,7 +131,7 @@ function Cards(Props){
                 {Cards.map((card,index)=>(
                     <ReactParallaxTilt> 
                     <div className="Card" onClick={PlayRound} key={index}>
-                        <img src={cardBack} className="ImageTest"></img>
+                        <img src={CardBack} className="ImageTest"></img>
                     </div>
                     </ReactParallaxTilt>
                 ))}
