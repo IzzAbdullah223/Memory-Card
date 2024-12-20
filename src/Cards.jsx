@@ -42,7 +42,7 @@ function Cards(Props){
                         cardImg.src = data.data[randomNumber].card_images[0].image_url
                         setCardArray(C=>[...C,data.data[randomNumber].card_images[0].image_url])
                     })
-                },2000)
+                },500)
                 
         }
     }, [data]);
@@ -67,7 +67,7 @@ function Cards(Props){
                     setCardArray(C=>[...C,data.data[randomNumber].card_images[0].image_url])
                 
                 })
-            },2000)
+            },500)
     }
 
     function PlayRound(event){
