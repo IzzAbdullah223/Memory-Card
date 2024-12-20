@@ -9,5 +9,4 @@ Responsive Design: The game works great on different screen sizes, tested and tw
 
 Smooth Interactions: Added CSS transitions for hover effects and background changes to make the game more engaging.
 
-To try: https://memory-mard23-pistfempf-izzabdullah223s-projects.vercel.app
 
