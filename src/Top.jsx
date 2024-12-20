@@ -13,7 +13,6 @@ function Top(Props){
          <h3>MEMORY CARD GAME</h3>
          </div>
         <h2>Best Score: {Props.bestScore}</h2>
-       
          </div>
      
          
