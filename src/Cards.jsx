@@ -6,9 +6,6 @@ import ReactParallaxTilt from 'react-parallax-tilt';
 
 
 function Cards(Props){
-    console.log(window.innerWidth)
-    console.log(window.innerHeight)
-
     
     const[data,setData]= useState(null)
     const[Loading,setLoading] = useState(true)
